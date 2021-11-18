@@ -30,7 +30,7 @@ class ClipToTensor(object):
         else:
             raise TypeError('Expected numpy.ndarray or PIL.Image\
             but got list of {0}'.format(type(clip[0])))
-        print (self.channel_nb, len(clip), int(h), int(w))
+            
         np_clip = np.zeros([self.channel_nb, len(clip), int(h), int(w)])
 
         # Convert
